@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="314.0" prefWidth="386.0" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c195application.view.ReportApptTypeMonthController">
+    <children>
+      <Button fx:id="btnView" layoutX="324.0" layoutY="65.0" mnemonicParsing="false" onAction="#onActionView" text="View" />
+      <ComboBox fx:id="comboMonth" layoutX="27.0" layoutY="65.0" prefHeight="27.0" prefWidth="278.0" />
+      <ListView fx:id="lstReport" layoutX="27.0" layoutY="100.0" prefHeight="200.0" prefWidth="347.0" />
+      <Label layoutX="27.0" layoutY="23.0" styleClass="label-title" text="Number of Appt Types by Month">
+      </Label>
+   </children>
+</AnchorPane>

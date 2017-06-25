@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="c195application.view.CalendarMonthController">
+    <children>
+		<BorderPane layoutX="141.0" layoutY="50.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<top>
+				<GridPane alignment="CENTER" BorderPane.alignment="CENTER">
+					<columnConstraints>
+						<ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" />
+						<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" />
+						<ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" />
+					</columnConstraints>
+					<rowConstraints>
+						<RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+					</rowConstraints>
+					<children>
+						<Button mnemonicParsing="false" onAction="#handlePrev" text="&lt;&lt;" />
+						<Button mnemonicParsing="false" onAction="#handleNext" text="&gt;&gt;" GridPane.columnIndex="2" />
+                  <Label fx:id="monthLabel" styleClass="labelMonthHeader" text="January" GridPane.columnIndex="1"  ></Label>
+                   
+                
+					</children>
+					<padding>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</padding>
+				</GridPane>
+			</top>
+			<center>
+				<BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+					<top>
+						<GridPane BorderPane.alignment="CENTER">
+							<columnConstraints>
+								<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+								<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+								<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+								<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+								<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+								<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+								<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+							</columnConstraints>
+							<rowConstraints>
+								<RowConstraints prefHeight="50.0" vgrow="SOMETIMES" />
+								<RowConstraints prefHeight="20.0" vgrow="SOMETIMES" />
+							</rowConstraints>
+							<children>
+								<Label fx:id="sundayLabel" styleClass="label-small" text="Sunday" GridPane.rowIndex="1" />
+								<Label fx:id="mondayLabel" styleClass="label-small" text="Monday" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+								<Label fx:id="tuesdayLabel" styleClass="label-small" text="Tuesday" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+								<Label fx:id="wednesdayLabel" styleClass="label-small" text="Wednesday" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+								<Label fx:id="thursdayLabel" styleClass="label-small" text="Thursday" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+								<Label fx:id="fridayLabel" styleClass="label-small" text="Friday" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+								<Label fx:id="saturdayLabel" styleClass="label-small" text="Saturday" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                                                                
+							</children>
+						</GridPane>
+					</top>
+					<center>
+						<GridPane fx:id="calendar" hgap="2.0" vgap="2.0" BorderPane.alignment="CENTER">
+							<columnConstraints>
+								<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+								<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+								<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+								<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+								<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+								<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+								<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+							</columnConstraints>
+							<rowConstraints>
+								<RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
+								<RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
+								<RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
+								<RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
+								<RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
+								<RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
+							</rowConstraints>
+						</GridPane>
+					</center>
+				</BorderPane>
+			</center>
+			<bottom>
+				<HBox spacing="15.0" BorderPane.alignment="CENTER">
+					<children>
+						<Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleNewAppt" text="New" />
+						<Button fx:id="editApptButton" disable="true" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleEditAppt" text="Edit" />
+						<Button fx:id="delApptButton" disable="true" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleDelAppt" text="Delete">
+							<HBox.margin>
+								<Insets />
+							</HBox.margin>
+						</Button>
+					</children>
+					<padding>
+						<Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+					</padding>
+				</HBox>
+			</bottom>
+		</BorderPane>
+	</children>
+</AnchorPane>

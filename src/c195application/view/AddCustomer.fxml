@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="root" stylesheets="@style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="c195application.view.AddCustomerController">
+    <children>
+		<GridPane hgap="5.0" prefHeight="346.0" prefWidth="401.0" vgap="10.0">
+			<columnConstraints>
+				<ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+				<ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints vgrow="SOMETIMES" />
+				<RowConstraints vgrow="SOMETIMES" />
+				<RowConstraints vgrow="SOMETIMES" />
+				<RowConstraints vgrow="SOMETIMES" />
+				<RowConstraints vgrow="SOMETIMES" />
+				<RowConstraints vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+				<RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints />
+            <RowConstraints />
+			</rowConstraints>
+			<children>
+				<Label styleClass="label-title" text="Add Customer" GridPane.columnIndex="1" GridPane.columnSpan="2"></Label>
+				<TextField fx:id="firstNameField" promptText="firstName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+				<TextField fx:id="lastNameField" promptText="lastName" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="2" />
+				<TextField fx:id="address1Field" promptText="address1" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="3" />
+				<TextField fx:id="address2Field" promptText="address2" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="4" />
+				<TextField fx:id="cityField" promptText="city" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+				<TextField fx:id="postalCodeField" promptText="postalCode" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="6" />
+				<TextField fx:id="phoneField" promptText="phone" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+				<ComboBox fx:id="countryComboBox" promptText="country" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="8" />
+				<ButtonBar buttonMinWidth="0.0" buttonOrder="UIY_NCOA+" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="9">
+					<buttons>
+						<Button cancelButton="true" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+						<Button defaultButton="true" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSave" text="Save" />
+					</buttons>
+				</ButtonBar>
+			</children>
+			<padding>
+				<Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+			</padding>
+		</GridPane>
+	</children>
+</AnchorPane>

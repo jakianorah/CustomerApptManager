@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 11, 2017, 9:20:22 PM
+    Author     : jakianorah
+*/
+.root {
+-fx-background-color:silver
+}
+
+.button{
+    -fx-background-color: navy;
+    -fx-text-fill: whitesmoke;
+    -fx-border-color: whitesmoke;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+.labelMonthHeader{
+    -fx-font-size:18;
+    -fx-font-style:"bold";
+    -fx-padding:5;
+     -fx-text-fill: navy;
+    -fx-font-family: "Arial Black";
+}
+.label-title{
+    -fx-font-size:18;
+    -fx-font-style:"bold";
+    -fx-padding:5;
+    -fx-font-family: "Arial Black";
+    -fx-text-fill: navy;
+    
+    
+}
+.labelWeekHeader{
+    -fx-font-size:18;
+    -fx-font-style:"bold";
+    -fx-padding:5;
+    -fx-font-family: "Arial Black";
+    -fx-text-fill: navy;
+}
+
